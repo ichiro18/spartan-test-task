@@ -40,5 +40,5 @@ module.exports = {
   },
   lintOnSave: process.env.NODE_ENV !== 'production',
   productionSourceMap: false,
-  publicPath: process.env.BASE_URL || '/',
+  publicPath: process.env.VUE_APP_BASE_URL || '/',
 };
