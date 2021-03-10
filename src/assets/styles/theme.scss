@@ -45,9 +45,18 @@ a {
     letter-spacing: 3px;
     transform: scaleX(1.5);
     transform-origin: left;
+    width: fit-content;
 
     & + * {
       margin-top: 50px;
     }
+  }
+}
+
+.visible-xs {
+  display: none;
+
+  @media screen and (max-width: $sm) {
+    display: initial;
   }
 }

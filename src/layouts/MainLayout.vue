@@ -20,10 +20,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "~@/assets/styles/config/_variables.scss";
+
 .layout--main {
   display: flex;
   flex: 1 0;
   padding-top: 72px;
+
   .sidebar {
     display: flex;
     flex: 1 0;
@@ -31,6 +34,10 @@ export default {
     align-items: flex-start;
     height: 100%;
     max-width: min(240px, 100%);
+
+    @media screen and (max-width: $md) {
+      display: none;
+    }
 
     .main-menu {
       margin-top: 75px;
