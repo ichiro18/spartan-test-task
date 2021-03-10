@@ -98,7 +98,7 @@ export default {
       }
     },
     replaceByDefault(e) {
-      e.target.src = `/Badge-Sprint.svg`;
+      e.target.src = require('@/assets/images/Badge-Sprint.svg');
     }
   },
   watch: {

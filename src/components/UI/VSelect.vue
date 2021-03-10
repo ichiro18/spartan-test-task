@@ -57,7 +57,7 @@
           </template>
           <template slot="caret" slot-scope="{ toggle }">
             <div @mousedown.prevent.stop="toggle" class="multiselect__select">
-              <img src="/caret.svg" alt="-">
+              <img :src="require('@/assets/images/caret.svg')" alt="-">
             </div>
           </template>
         </multiselect>

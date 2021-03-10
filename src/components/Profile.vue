@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <img class="profile__avatar" src="/Avatar.png" alt="avatar">
+    <img class="profile__avatar" :src="require('@/assets/images/Avatar.png')" alt="avatar">
     <span class="profile__name">Someone Verylongname</span>
   </div>
 </template>
