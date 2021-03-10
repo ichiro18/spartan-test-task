@@ -1,5 +1,5 @@
 <template>
-  <div class="page page--tropaion">
+  <div class="page page--tropaion" v-if="!loading">
     <h1 class="page__title">Your <br class="visible-xs"> tropaion</h1>
 
     <div class="page__controls">
@@ -63,6 +63,7 @@ export default {
   data() {
     return {
       selectedYear: null,
+      loading: false,
       isEmpty,
     }
   },
@@ -115,7 +116,11 @@ export default {
     }
   },
   created() {
-    this.loadTrophies();
+    this.loading = true;
+    this.loadTrophies()
+      .finally(() => {
+        this.loading = false;
+      })
   }
 }
 </script>
