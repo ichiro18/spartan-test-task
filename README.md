@@ -8,6 +8,11 @@
 
 ## Features
 - Single Page Application
+- API integration
+- Grouped data
+- Saving filter state in url
+- Fallback images
+- Stable markup
 
 ## Install
 ```shell
@@ -18,6 +23,9 @@ $ yarn run dev
 ## Usage
 Open [localhost:8080](http://localhost:8080)
 
+## Demo
+View demo [here](https://ichiro18.github.io/spartan-test-task)
+
 ## Built With
 - [VueJS](https://vuejs.org/)
 - [Webpack](https://webpack.js.org/)
@@ -26,9 +34,6 @@ Open [localhost:8080](http://localhost:8080)
 For transparency into the release cycle and in striving to maintain backward compatibility, the current project is maintained under Semantic Versioning guidelines and will adhere to these rules whenever possible.
 
 For more information on SemVer, please visit http://semver.org/.
-
-## TODO
-- [X] VueJS SPA skeleton
 
 ## Authors
 Authors
