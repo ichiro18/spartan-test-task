@@ -41,7 +41,10 @@ export default {
     text-transform: uppercase;
     text-overflow: ellipsis;
     font-family: "Oswald", sans-serif;
+    // todo: remove after get font
     letter-spacing: -2px;
+    transform: scaleX(0.7);
+    transform-origin: left;
   }
 }
 </style>

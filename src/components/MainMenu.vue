@@ -3,7 +3,9 @@
     <li class="menu__item">
       <router-link
         class="menu__link"
-        to="/">
+        to="/"
+        exact
+      >
         Home
       </router-link>
     </li>

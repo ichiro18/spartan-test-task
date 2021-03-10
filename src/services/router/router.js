@@ -9,6 +9,7 @@ const router = new VueRouter({
   mode: 'history',
   base: BASE_URL,
   linkExactActiveClass: 'is-active',
+  linkActiveClass: 'is-active',
   routes,
 });
 

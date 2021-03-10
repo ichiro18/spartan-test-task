@@ -1,11 +1,13 @@
 @import "config/variables";
 @import "config/fonts";
+@import "config/vendor";
 @import "config/grid";
 
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font: inherit;
 }
 
 body,
@@ -27,5 +29,25 @@ a {
   &:visited,
   &:active {
     all: inherit;
+  }
+}
+
+.page {
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: $text-primary;
+    text-transform: uppercase;
+    margin: 0;
+    // todo: remove after get font
+    letter-spacing: 3px;
+    transform: scaleX(1.5);
+    transform-origin: left;
+
+    & + * {
+      margin-top: 50px;
+    }
   }
 }
